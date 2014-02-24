@@ -36,12 +36,12 @@ int main()  {
 	       char ADC_char[32];
 	   	   char volt_char[32];
 	   	   float v_in;
-	   	   float v_ref = 5.00f;
+	   	   const float v_ref = 5.00f;
 
 	   		  v_in = (ADC*v_ref)/1024.0f;
 
 	   	sprintf(ADC_char, "10bit=%d",ADC);
-	    sprintf(volt_char,"U=%1.2fV",(double)v_in);
+	        sprintf(volt_char,"U=%1.2fV",(double)v_in);
 
 	   		      LCD_Clear();
 	   	          LCD_GoTo(3,0);
