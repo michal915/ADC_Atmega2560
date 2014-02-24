@@ -39,7 +39,7 @@ int main()  {
 	       char ADC_char[32];
 	   	   char volt_char[32];
 	   	   float v_in;
-	   	   float v_ref = 5.00f;
+	   	   const float v_ref = 5.00f;
 
 	   		  v_in = (ADC*v_ref)/1024.0f;
 
